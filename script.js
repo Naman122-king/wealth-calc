@@ -1,3 +1,8 @@
+// FORM SUBMIT EVENT HANDLE
+document.getElementById("wealth-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // page reload hone se roke
+  calculateWealthPercentile(); // main function call kare
+});
 function calculateWealthPercentile() {
   const netWorth = parseFloat(document.getElementById("netWorth").value);
   const income = parseFloat(document.getElementById("income").value);
